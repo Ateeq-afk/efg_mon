@@ -80,8 +80,38 @@ export default function Testimonials() {
       }}
     >
       {/* ═══════════════════════════════════════════════════════════════
-          FILM GRAIN OVERLAY
+          BACKGROUND TEXTURE LAYERS
           ═══════════════════════════════════════════════════════════════ */}
+      {/* Subtle ambient glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            radial-gradient(ellipse 100% 80% at 50% 100%, rgba(232, 101, 26, 0.04) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 40% at 0% 50%, rgba(232, 101, 26, 0.02) 0%, transparent 50%),
+            radial-gradient(ellipse 60% 40% at 100% 50%, rgba(232, 101, 26, 0.02) 0%, transparent 50%)
+          `,
+        }}
+      />
+
+      {/* Diagonal line pattern */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          opacity: 0.012,
+          backgroundImage: `
+            repeating-linear-gradient(
+              -45deg,
+              transparent,
+              transparent 40px,
+              rgba(255,255,255,0.15) 40px,
+              rgba(255,255,255,0.15) 41px
+            )
+          `,
+        }}
+      />
+
+      {/* Film grain overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -90,6 +120,20 @@ export default function Testimonials() {
           backgroundRepeat: "repeat",
         }}
       />
+
+      {/* Background Quote Mark */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
+        style={{
+          fontFamily: "var(--font-display)",
+          fontSize: "400px",
+          color: "rgba(255, 255, 255, 0.02)",
+          fontWeight: 800,
+          zIndex: 0,
+        }}
+      >
+        "
+      </div>
 
       {/* ═══════════════════════════════════════════════════════════════
           CONTENT

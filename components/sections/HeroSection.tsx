@@ -19,7 +19,7 @@ const heroImages = [
 const nextEvent = {
   name: "Cyber First Kuwait",
   location: "Kuwait City, Kuwait",
-  date: new Date("2026-04-20T09:00:00"),
+  date: new Date("2026-04-21T09:00:00"),
 };
 
 // Slideshow timing
@@ -65,8 +65,8 @@ export default function HeroSection() {
       ref={heroRef}
       className="relative w-full overflow-hidden"
       style={{
-        height: "100vh",
-        background: "var(--black)",
+        height: "92vh",
+        background: "transparent",
       }}
     >
       {/* ═══════════════════════════════════════════════════════════════
@@ -365,48 +365,6 @@ export default function HeroSection() {
           ))}
         </motion.div>
       )}
-
-      {/* ═══════════════════════════════════════════════════════════════
-          SCROLL INDICATOR — Between dots and ticker
-          ═══════════════════════════════════════════════════════════════ */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.8 }}
-        className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
-        style={{ bottom: 100 }}
-      >
-        <span
-          style={{
-            fontSize: 9,
-            fontWeight: 500,
-            letterSpacing: "2.5px",
-            textTransform: "uppercase",
-            color: "var(--white-muted)",
-            fontFamily: "var(--font-outfit)",
-          }}
-        >
-          Scroll
-        </span>
-        <div
-          className="w-px h-6 overflow-hidden"
-          style={{ background: "rgba(255, 255, 255, 0.1)" }}
-        >
-          <motion.div
-            className="w-full"
-            style={{
-              height: "100%",
-              background: "var(--orange)",
-            }}
-            animate={{ y: ["-100%", "100%"] }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-        </div>
-      </motion.div>
 
       {/* ═══════════════════════════════════════════════════════════════
           COUNTDOWN TICKER — Fixed at viewport bottom

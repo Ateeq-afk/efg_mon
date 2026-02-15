@@ -38,7 +38,7 @@ export default function ImpactBar() {
       ref={sectionRef}
       style={{
         background: "var(--black-light)",
-        padding: "56px 0",
+        padding: "48px 0 56px",
       }}
     >
       <motion.div

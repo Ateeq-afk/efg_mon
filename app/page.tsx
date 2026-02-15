@@ -25,13 +25,10 @@ export default function Home() {
       {/* The Event Series — Four Worlds */}
       <EventSeriesShowcase />
 
-      {/* Section Transition - Expand */}
-      <SectionTransition variant="expand" />
-
-      {/* The Impact Bar — Numbers That Matter */}
+      {/* The Impact Bar — Numbers That Matter (flows from Event Series via gradient) */}
       <ImpactBar />
 
-      {/* Annual Timeline — The Year Ahead */}
+      {/* Annual Timeline — The Year Ahead (flows directly from ImpactBar) */}
       <AnnualTimeline />
 
       {/* Section Transition - Sweep */}

@@ -12,24 +12,23 @@ const eventSeries = [
     tagline: "Defending the Digital Frontier",
     description:
       "Where the region's CISOs, security architects, and cyber leaders gather to shape the future of enterprise defense.",
-    stats: "3 Editions · Dubai, Riyadh, Abu Dhabi",
+    stats: "5 Editions · Kuwait, Qatar, KSA, Oman",
     color: "#01BBF5",
     image:
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
     href: "/events/cyber-first",
   },
   {
-    id: "ot-security",
+    id: "ot-security-first",
     title: "OT Security First",
     tagline: "Securing Critical Infrastructure",
     description:
       "Bridging IT and OT security for the industries that keep the world running — energy, manufacturing, utilities.",
-    stats: "2 Editions · Dubai, Riyadh",
-    color: "#9B4D96", // Lighter expression of #270223 for visibility
-    colorDeep: "#270223",
+    stats: "3 Editions · Saudi Arabia, Oman",
+    color: "#D34B9A",
     image:
       "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
-    href: "/events/ot-security",
+    href: "/events/ot-security-first",
   },
   {
     id: "opex-first",
@@ -37,24 +36,23 @@ const eventSeries = [
     tagline: "Engineering Operational Excellence",
     description:
       "Process transformation, automation, and the frameworks driving efficiency at scale across the modern enterprise.",
-    stats: "2 Editions · Dubai, Doha",
+    stats: "3 Editions · Dubai, Doha, Riyadh",
     color: "#11A385",
     image:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
     href: "/events/opex-first",
   },
   {
-    id: "data-ai",
+    id: "data-ai-first",
     title: "Data & AI First",
     tagline: "Intelligence at Scale",
     description:
       "Data strategy, artificial intelligence, and machine learning — for the leaders building the intelligent, autonomous enterprise.",
-    stats: "2 Editions · Dubai, Riyadh",
-    color: "#EEEEEE",
-    isLight: true, // Special treatment for white-themed card
+    stats: "2 Editions · Kuwait, Qatar",
+    color: "#7C3AED",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
-    href: "/events/data-ai",
+    href: "/events/data-ai-first",
   },
 ];
 
@@ -133,11 +131,20 @@ export default function EventSeriesShowcase() {
   return (
     <section
       ref={sectionRef}
+      className="relative"
       style={{
         background: "var(--black)",
-        padding: "clamp(100px, 12vw, 160px) 0",
+        padding: "clamp(100px, 12vw, 160px) 0 clamp(120px, 14vw, 180px)",
       }}
     >
+      {/* Gradient fade to next section */}
+      <div
+        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        style={{
+          height: 120,
+          background: "linear-gradient(to bottom, transparent 0%, var(--black-light) 100%)",
+        }}
+      />
       <div
         style={{
           maxWidth: 1320,
@@ -234,7 +241,7 @@ export default function EventSeriesShowcase() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid gap-5"
+          className="grid gap-6"
           style={{
             gridTemplateColumns: "repeat(4, 1fr)",
           }}
@@ -244,6 +251,9 @@ export default function EventSeriesShowcase() {
               key={series.id}
               variants={cardVariants[index]}
               custom={index}
+              style={{
+                marginTop: index % 2 === 1 ? 40 : 0, // Stagger effect: Push down odd items
+              }}
             >
               <PortalCard series={series} />
             </motion.div>
@@ -276,14 +286,13 @@ function PortalCard({
 }: {
   series: (typeof eventSeries)[0];
 }) {
-  const isLight = series.isLight;
   const accentColor = series.color;
-  const glowOpacity = isLight ? 0.12 : 0.08;
+  const glowOpacity = 0.08;
 
   return (
     <Link
       href={series.href}
-      className="portal-card group relative block overflow-hidden cursor-pointer"
+      className="portal-card group relative block overflow-hidden cursor-pointer transition-all duration-500"
       style={{
         borderRadius: 22,
         border: "1px solid rgba(255, 255, 255, 0.05)",
@@ -471,9 +480,14 @@ function PortalCard({
 
       {/* Hover styles */}
       <style jsx>{`
+        .portal-card:hover {
+          transform: translateY(-8px) scale(1.02);
+          border-color: ${accentColor}33 !important;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px ${accentColor}15;
+        }
         .portal-card:hover img {
           filter: brightness(0.28) saturate(0.9) !important;
-          transform: scale(1.08);
+          transform: scale(1.12);
         }
         .portal-card:hover > div:nth-child(2) {
           background: linear-gradient(160deg, ${accentColor}1A 0%, transparent 50%) !important;
@@ -492,6 +506,9 @@ function PortalCard({
           .portal-card {
             aspect-ratio: auto !important;
             min-height: 400px;
+          }
+          .portal-card:hover {
+            transform: translateY(-4px) scale(1.01);
           }
         }
       `}</style>

@@ -57,7 +57,7 @@ const timelineData: MonthData[] = [
         monthAbbr: "MAR",
         location: "Dubai, UAE",
         host: "CleverTap",
-        href: "/boardrooms/clevertap-dubai",
+        href: "/networkfirst",
       },
       {
         type: "boardroom",
@@ -66,9 +66,9 @@ const timelineData: MonthData[] = [
         date: new Date("2026-03-03"),
         day: 3,
         monthAbbr: "MAR",
-        location: "Riyadh, KSA",
+        location: "Riyadh, Saudi Arabia",
         host: "CleverTap",
-        href: "/boardrooms/clevertap-riyadh",
+        href: "/networkfirst",
       },
     ],
   },
@@ -82,29 +82,13 @@ const timelineData: MonthData[] = [
         seriesColor: "#01BBF5",
         edition: "3RD EDITION",
         title: "Cyber First Kuwait",
-        date: new Date("2026-04-20"),
-        day: 20,
-        weekday: "MON",
-        location: "Kuwait City, Kuwait",
-        venue: "Venue TBA",
-        attendees: "500+ Attendees",
-        href: "/events/cyber-first-kuwait",
-      },
-      {
-        type: "conference",
-        id: "data-ai-kuwait",
-        series: "Data & AI First",
-        seriesColor: "#EEEEEE",
-        isLight: true,
-        edition: "1ST EDITION",
-        title: "Data & AI First Kuwait",
         date: new Date("2026-04-21"),
         day: 21,
         weekday: "TUE",
         location: "Kuwait City, Kuwait",
         venue: "Venue TBA",
         attendees: "500+ Attendees",
-        href: "/events/data-ai-kuwait",
+        href: "/events/cyber-first",
       },
       {
         type: "boardroom",
@@ -113,9 +97,149 @@ const timelineData: MonthData[] = [
         date: new Date("2026-04-29"),
         day: 29,
         monthAbbr: "APR",
-        location: "Riyadh, KSA",
+        location: "Riyadh, Saudi Arabia",
         host: "OutSystems",
-        href: "/boardrooms/outsystems-riyadh",
+        href: "/networkfirst",
+      },
+    ],
+  },
+  {
+    month: "MAY",
+    events: [
+      {
+        type: "conference",
+        id: "data-first-kuwait",
+        series: "Data & AI First",
+        seriesColor: "#7C3AED",
+        edition: "1ST EDITION",
+        title: "Data First Kuwait",
+        date: new Date("2026-05-18"),
+        day: 18,
+        weekday: "MON",
+        location: "Kuwait City, Kuwait",
+        venue: "Venue TBA",
+        attendees: "500+ Attendees",
+        href: "/events/data-ai-first",
+      },
+    ],
+  },
+  {
+    month: "JUNE",
+    events: [
+      {
+        type: "conference",
+        id: "ot-security-jubail",
+        series: "OT Security First",
+        seriesColor: "#D34B9A",
+        edition: "2ND EDITION",
+        title: "OT Security Jubail",
+        date: new Date("2026-06-15"),
+        day: 15,
+        weekday: "TBC",
+        location: "Jubail, Saudi Arabia",
+        venue: "Venue TBA",
+        attendees: "300+ Attendees",
+        href: "/events/ot-security-first",
+      },
+    ],
+  },
+  {
+    month: "SEPTEMBER",
+    events: [
+      {
+        type: "conference",
+        id: "digital-first-qatar",
+        series: "Data & AI First",
+        seriesColor: "#7C3AED",
+        edition: "2ND EDITION",
+        title: "Digital First Qatar",
+        date: new Date("2026-09-15"),
+        day: 15,
+        weekday: "TBC",
+        location: "Doha, Qatar",
+        venue: "Venue TBA",
+        attendees: "500+ Attendees",
+        href: "/events/data-ai-first",
+      },
+      {
+        type: "conference",
+        id: "cyber-first-qatar",
+        series: "Cyber First",
+        seriesColor: "#01BBF5",
+        edition: "4TH EDITION",
+        title: "Cyber First Qatar",
+        date: new Date("2026-09-16"),
+        day: 16,
+        weekday: "TBC",
+        location: "Doha, Qatar",
+        venue: "Venue TBA",
+        attendees: "500+ Attendees",
+        href: "/events/cyber-first",
+      },
+      {
+        type: "conference",
+        id: "opex-first-saudi",
+        series: "Opex First",
+        seriesColor: "#0F735E",
+        edition: "3RD EDITION",
+        title: "OPEX First Saudi",
+        date: new Date("2026-09-20"),
+        day: 20,
+        weekday: "TBC",
+        location: "Riyadh, Saudi Arabia",
+        venue: "Venue TBA",
+        attendees: "400+ Attendees",
+        href: "/events/opex-first",
+      },
+      {
+        type: "conference",
+        id: "digital-resilience-ksa",
+        series: "Cyber First",
+        seriesColor: "#01BBF5",
+        edition: "1ST EDITION",
+        title: "Digital Resilience KSA",
+        date: new Date("2026-09-22"),
+        day: 22,
+        weekday: "TBC",
+        location: "Riyadh, Saudi Arabia",
+        venue: "Venue TBA",
+        attendees: "400+ Attendees",
+        href: "/events/cyber-first",
+      },
+    ],
+  },
+  {
+    month: "OCTOBER",
+    events: [
+      {
+        type: "conference",
+        id: "cyber-first-oman",
+        series: "Cyber First",
+        seriesColor: "#01BBF5",
+        edition: "5TH EDITION",
+        title: "Cyber First Oman",
+        date: new Date("2026-10-12"),
+        day: 12,
+        weekday: "TBC",
+        location: "Muscat, Oman",
+        venue: "Venue TBA",
+        attendees: "400+ Attendees",
+        href: "/events/cyber-first",
+      },
+      {
+        type: "conference",
+        id: "ot-security-oman",
+        series: "OT Security First",
+        seriesColor: "#D34B9A",
+        edition: "3RD EDITION",
+        title: "OT Security Oman",
+        date: new Date("2026-10-13"),
+        day: 13,
+        weekday: "TBC",
+        location: "Muscat, Oman",
+        venue: "Venue TBA",
+        attendees: "300+ Attendees",
+        href: "/events/ot-security-first",
       },
     ],
   },
@@ -132,18 +256,30 @@ function getDaysUntil(date: Date): number {
 // MAIN COMPONENT
 // ═══════════════════════════════════════════════════════════════
 
+type ViewMode = "list" | "grid";
+
 export default function AnnualTimeline() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+  const [viewMode, setViewMode] = useState<ViewMode>("list");
 
   return (
     <section
       ref={sectionRef}
+      className="relative"
       style={{
         background: "var(--black-light)",
-        padding: "clamp(80px, 10vw, 140px) 0 clamp(80px, 10vw, 120px)",
+        padding: "clamp(80px, 10vw, 140px) 0 clamp(100px, 12vw, 160px)",
       }}
     >
+      {/* Gradient fade to next section — seamless scene transition */}
+      <div
+        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        style={{
+          height: 140,
+          background: "linear-gradient(to bottom, transparent 0%, var(--black) 100%)",
+        }}
+      />
       <div
         style={{
           maxWidth: 1320,
@@ -158,79 +294,134 @@ export default function AnnualTimeline() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col md:flex-row md:items-end md:justify-between gap-6"
           style={{ marginBottom: 56 }}
         >
-          {/* Label */}
-          <div className="flex items-center gap-3" style={{ marginBottom: 12 }}>
-            <span
+          <div>
+            {/* Label */}
+            <div className="flex items-center gap-3" style={{ marginBottom: 12 }}>
+              <span
+                style={{
+                  width: 30,
+                  height: 1,
+                  background: "var(--orange)",
+                }}
+              />
+              <span
+                style={{
+                  fontSize: 11,
+                  fontWeight: 600,
+                  letterSpacing: "2.5px",
+                  textTransform: "uppercase",
+                  color: "var(--orange)",
+                  fontFamily: "var(--font-outfit)",
+                }}
+              >
+                2026 Calendar
+              </span>
+            </div>
+
+            {/* Title */}
+            <h2
               style={{
-                width: 30,
-                height: 1,
-                background: "var(--orange)",
-              }}
-            />
-            <span
-              style={{
-                fontSize: 11,
-                fontWeight: 600,
-                letterSpacing: "2.5px",
-                textTransform: "uppercase",
-                color: "var(--orange)",
-                fontFamily: "var(--font-outfit)",
+                fontFamily: "var(--font-display)",
+                fontWeight: 800,
+                fontSize: "clamp(34px, 4.5vw, 56px)",
+                letterSpacing: "-1.5px",
+                color: "var(--white)",
+                lineHeight: 1.1,
+                margin: 0,
               }}
             >
-              2026 Calendar
-            </span>
+              The Year Ahead
+            </h2>
+
+            {/* Description */}
+            <p
+              style={{
+                fontFamily: "var(--font-outfit)",
+                fontWeight: 300,
+                fontSize: 16,
+                color: "#707070",
+                lineHeight: 1.6,
+                maxWidth: 520,
+                margin: "12px 0 0",
+              }}
+            >
+              Conferences, boardrooms, and executive gatherings across the GCC —
+              every event EFG is bringing to life this year.
+            </p>
           </div>
 
-          {/* Title */}
-          <h2
+          {/* View Toggle */}
+          <div
+            className="flex items-center gap-1"
             style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 800,
-              fontSize: "clamp(34px, 4.5vw, 56px)",
-              letterSpacing: "-1.5px",
-              color: "var(--white)",
-              lineHeight: 1.1,
-              margin: 0,
+              background: "rgba(255, 255, 255, 0.03)",
+              border: "1px solid rgba(255, 255, 255, 0.06)",
+              borderRadius: 8,
+              padding: 4,
             }}
           >
-            The Year Ahead
-          </h2>
-
-          {/* Description */}
-          <p
-            style={{
-              fontFamily: "var(--font-outfit)",
-              fontWeight: 300,
-              fontSize: 16,
-              color: "#707070",
-              lineHeight: 1.6,
-              maxWidth: 520,
-              margin: "12px 0 0",
-            }}
-          >
-            Conferences, boardrooms, and executive gatherings across the GCC —
-            every event EFG is bringing to life this year.
-          </p>
+            <button
+              onClick={() => setViewMode("list")}
+              className="flex items-center gap-2 transition-all"
+              style={{
+                padding: "8px 16px",
+                borderRadius: 6,
+                background: viewMode === "list" ? "rgba(232, 101, 26, 0.15)" : "transparent",
+                border: viewMode === "list" ? "1px solid rgba(232, 101, 26, 0.3)" : "1px solid transparent",
+                color: viewMode === "list" ? "#E8651A" : "#606060",
+                fontFamily: "var(--font-outfit)",
+                fontSize: 12,
+                fontWeight: 500,
+                cursor: "pointer",
+              }}
+            >
+              <ListIcon />
+              <span>List</span>
+            </button>
+            <button
+              onClick={() => setViewMode("grid")}
+              className="flex items-center gap-2 transition-all"
+              style={{
+                padding: "8px 16px",
+                borderRadius: 6,
+                background: viewMode === "grid" ? "rgba(232, 101, 26, 0.15)" : "transparent",
+                border: viewMode === "grid" ? "1px solid rgba(232, 101, 26, 0.3)" : "1px solid transparent",
+                color: viewMode === "grid" ? "#E8651A" : "#606060",
+                fontFamily: "var(--font-outfit)",
+                fontSize: 12,
+                fontWeight: 500,
+                cursor: "pointer",
+              }}
+            >
+              <GridIcon />
+              <span>Grid</span>
+            </button>
+          </div>
         </motion.div>
 
         {/* ═══════════════════════════════════════════════════════════════
-            TIMELINE
+            TIMELINE — List or Grid View
             ═══════════════════════════════════════════════════════════════ */}
-        <div className="flex flex-col" style={{ gap: 40 }}>
-          {timelineData.map((monthData, monthIndex) => (
-            <MonthBlock
-              key={monthData.month}
-              monthData={monthData}
-              monthIndex={monthIndex}
-              isInView={isInView}
-            />
-          ))}
+        {viewMode === "list" ? (
+          <div className="flex flex-col" style={{ gap: 40 }}>
+            {timelineData.map((monthData, monthIndex) => (
+              <MonthBlock
+                key={monthData.month}
+                monthData={monthData}
+                monthIndex={monthIndex}
+                isInView={isInView}
+              />
+            ))}
 
-          {/* Coming Soon */}
-          <ComingSoon isInView={isInView} />
-        </div>
+            {/* Coming Soon */}
+            <ComingSoon isInView={isInView} />
+          </div>
+        ) : (
+          <GridView timelineData={timelineData} isInView={isInView} />
+        )}
       </div>
     </section>
   );
@@ -289,10 +480,8 @@ function MonthBlock({
           const isConference = event.type === "conference";
           const delay = baseDelay + 0.1 + eventIndex * (isConference ? 0.15 : 0.08);
 
-          // Check if we need the "Back to Back" connector
-          const needsConnector =
-            event.id === "cyber-first-kuwait" &&
-            monthData.events[eventIndex + 1]?.id === "data-ai-kuwait";
+          // Back to back connector disabled (no consecutive day events currently)
+          const needsConnector = false;
 
           return (
             <div key={event.id}>
@@ -399,25 +588,31 @@ function ConferenceRow({
       >
         {/* Colored edge indicator */}
         <div
-          className="absolute left-0 top-0 bottom-0 transition-opacity"
+          className="absolute left-0 top-0 bottom-0 transition-all duration-500"
           style={{
-            width: 3,
+            width: isHovered ? 6 : 4,
             background: accentColor,
-            borderRadius: "16px 0 0 16px",
-            opacity: isHovered ? 0.7 : 0,
-            transitionDuration: "0.5s",
+            opacity: 1, // Always visible for anchor
           }}
         />
 
         {/* DATE COLUMN */}
-        <div>
+        <div
+          className="flex flex-col items-center justify-center rounded-lg"
+          style={{
+            width: 80,
+            height: 80,
+            background: `linear-gradient(135deg, ${accentColor}15 0%, ${accentColor}05 100%)`,
+            border: `1px solid ${accentColor}20`,
+          }}
+        >
           <div
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: 44,
-              fontWeight: 800,
+              fontSize: 32,
+              fontWeight: 700,
               color: "white",
-              letterSpacing: "-2px",
+              letterSpacing: "-1px",
               lineHeight: 1,
             }}
           >
@@ -426,11 +621,11 @@ function ConferenceRow({
           <div
             style={{
               fontFamily: "var(--font-outfit)",
-              fontSize: 10,
-              fontWeight: 500,
+              fontSize: 9,
+              fontWeight: 600,
               textTransform: "uppercase",
-              letterSpacing: "1.5px",
-              color: "#484848",
+              letterSpacing: "1px",
+              color: accentColor,
               marginTop: 4,
             }}
           >
@@ -807,7 +1002,7 @@ function ComingSoon({ isInView }: { isInView: boolean }) {
           marginTop: 16,
         }}
       >
-        More events for H2 2026 announcing soon.
+        More events and dates to be confirmed soon.
       </p>
       <Link
         href="#newsletter"
@@ -821,6 +1016,401 @@ function ComingSoon({ isInView }: { isInView: boolean }) {
         }}
       >
         Want early access? Subscribe to our newsletter.
+      </Link>
+    </motion.div>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// GRID VIEW
+// ═══════════════════════════════════════════════════════════════
+
+function GridView({
+  timelineData,
+  isInView,
+}: {
+  timelineData: MonthData[];
+  isInView: boolean;
+}) {
+  // Flatten all events with month info
+  const allEvents = timelineData.flatMap((month) =>
+    month.events.map((event) => ({ ...event, monthName: month.month }))
+  );
+
+  // Separate conferences and boardrooms
+  const conferences = allEvents.filter((e) => e.type === "conference") as (ConferenceEvent & { monthName: string })[];
+  const boardrooms = allEvents.filter((e) => e.type === "boardroom") as (BoardroomEvent & { monthName: string })[];
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      {/* Conferences Grid */}
+      <div style={{ marginBottom: 48 }}>
+        <div
+          className="flex items-center gap-3"
+          style={{ marginBottom: 20 }}
+        >
+          <span
+            style={{
+              fontFamily: "var(--font-outfit)",
+              fontSize: 11,
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: "3px",
+              color: "#505050",
+            }}
+          >
+            Conferences
+          </span>
+          <div
+            style={{
+              flex: 1,
+              height: 1,
+              background: "rgba(255,255,255,0.04)",
+            }}
+          />
+          <span
+            style={{
+              fontFamily: "var(--font-outfit)",
+              fontSize: 11,
+              fontWeight: 500,
+              color: "#404040",
+            }}
+          >
+            {conferences.length} Events
+          </span>
+        </div>
+
+        <div
+          className="grid gap-4"
+          style={{
+            gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+          }}
+        >
+          {conferences.map((event, index) => (
+            <GridConferenceCard
+              key={event.id}
+              event={event}
+              delay={index * 0.05}
+              isInView={isInView}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Boardrooms Grid */}
+      <div>
+        <div
+          className="flex items-center gap-3"
+          style={{ marginBottom: 20 }}
+        >
+          <span
+            style={{
+              fontFamily: "var(--font-outfit)",
+              fontSize: 11,
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: "3px",
+              color: "#505050",
+            }}
+          >
+            NetworkFirst Boardrooms
+          </span>
+          <div
+            style={{
+              flex: 1,
+              height: 1,
+              background: "rgba(255,255,255,0.04)",
+            }}
+          />
+          <span
+            style={{
+              fontFamily: "var(--font-outfit)",
+              fontSize: 11,
+              fontWeight: 500,
+              color: "#404040",
+            }}
+          >
+            {boardrooms.length} Sessions
+          </span>
+        </div>
+
+        <div
+          className="grid gap-3"
+          style={{
+            gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+          }}
+        >
+          {boardrooms.map((event, index) => (
+            <GridBoardroomCard
+              key={event.id}
+              event={event}
+              delay={index * 0.05}
+              isInView={isInView}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Coming Soon in Grid */}
+      <ComingSoon isInView={isInView} />
+    </motion.div>
+  );
+}
+
+function GridConferenceCard({
+  event,
+  delay,
+  isInView,
+}: {
+  event: ConferenceEvent & { monthName: string };
+  delay: number;
+  isInView: boolean;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+  const accentColor = event.seriesColor;
+  const daysUntil = getDaysUntil(event.date);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+      transition={{ duration: 0.5, delay, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <Link
+        href={event.href}
+        className="block relative overflow-hidden transition-all"
+        style={{
+          background: "var(--black-card)",
+          border: `1px solid ${isHovered ? accentColor + "40" : "rgba(255,255,255,0.06)"}`,
+          borderRadius: 16,
+          padding: 24,
+          transform: isHovered ? "translateY(-4px)" : "translateY(0)",
+          boxShadow: isHovered ? `0 12px 40px rgba(0,0,0,0.3), 0 0 20px ${accentColor}10` : "none",
+          transitionDuration: "0.4s",
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Colored top border */}
+        <div
+          className="absolute top-0 left-0 right-0 transition-all"
+          style={{
+            height: isHovered ? 4 : 3,
+            background: accentColor,
+          }}
+        />
+
+        {/* Month & Date */}
+        <div className="flex items-center justify-between" style={{ marginBottom: 16 }}>
+          <div className="flex items-center gap-2">
+            <span
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: 28,
+                fontWeight: 700,
+                color: "white",
+                letterSpacing: "-1px",
+              }}
+            >
+              {event.day}
+            </span>
+            <span
+              style={{
+                fontFamily: "var(--font-outfit)",
+                fontSize: 11,
+                fontWeight: 500,
+                textTransform: "uppercase",
+                letterSpacing: "1px",
+                color: accentColor,
+              }}
+            >
+              {event.monthName.slice(0, 3)}
+            </span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <PulsingDot color={accentColor} />
+            <span
+              style={{
+                fontFamily: "var(--font-outfit)",
+                fontSize: 10,
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: "1px",
+                color: accentColor,
+              }}
+            >
+              {daysUntil}d
+            </span>
+          </div>
+        </div>
+
+        {/* Series Badge */}
+        <div
+          className="inline-flex items-center gap-1.5"
+          style={{
+            background: `${accentColor}14`,
+            border: `1px solid ${accentColor}26`,
+            borderRadius: 50,
+            padding: "3px 10px",
+            marginBottom: 12,
+          }}
+        >
+          <span
+            style={{
+              width: 4,
+              height: 4,
+              borderRadius: "50%",
+              background: accentColor,
+            }}
+          />
+          <span
+            style={{
+              fontFamily: "var(--font-outfit)",
+              fontSize: 9,
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "1px",
+              color: accentColor,
+            }}
+          >
+            {event.series}
+          </span>
+        </div>
+
+        {/* Title */}
+        <h3
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: 18,
+            fontWeight: 700,
+            color: "white",
+            letterSpacing: "-0.3px",
+            margin: "0 0 8px",
+          }}
+        >
+          {event.title}
+        </h3>
+
+        {/* Location */}
+        <div className="flex items-center gap-1.5">
+          <MapPinIconSmall />
+          <span
+            style={{
+              fontFamily: "var(--font-outfit)",
+              fontSize: 12,
+              fontWeight: 300,
+              color: "#606060",
+            }}
+          >
+            {event.location}
+          </span>
+        </div>
+      </Link>
+    </motion.div>
+  );
+}
+
+function GridBoardroomCard({
+  event,
+  delay,
+  isInView,
+}: {
+  event: BoardroomEvent & { monthName: string };
+  delay: number;
+  isInView: boolean;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+      transition={{ duration: 0.4, delay, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <Link
+        href={event.href}
+        className="block transition-all"
+        style={{
+          background: isHovered ? "rgba(232, 101, 26, 0.04)" : "rgba(232, 101, 26, 0.02)",
+          border: `1px solid ${isHovered ? "rgba(232, 101, 26, 0.15)" : "rgba(232, 101, 26, 0.06)"}`,
+          borderRadius: 12,
+          padding: "16px 20px",
+          transform: isHovered ? "translateY(-2px)" : "translateY(0)",
+          transitionDuration: "0.3s",
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            {/* Date */}
+            <div className="flex items-center gap-1">
+              <span
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: 20,
+                  fontWeight: 700,
+                  color: "white",
+                }}
+              >
+                {event.day}
+              </span>
+              <span
+                style={{
+                  fontFamily: "var(--font-outfit)",
+                  fontSize: 9,
+                  fontWeight: 500,
+                  textTransform: "uppercase",
+                  color: "#E8651A",
+                }}
+              >
+                {event.monthAbbr}
+              </span>
+            </div>
+
+            {/* Info */}
+            <div>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: "white",
+                  margin: 0,
+                }}
+              >
+                {event.title}
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-outfit)",
+                  fontSize: 11,
+                  fontWeight: 300,
+                  color: "#505050",
+                  margin: 0,
+                }}
+              >
+                {event.location}
+              </p>
+            </div>
+          </div>
+
+          {/* Apply link */}
+          <span
+            style={{
+              fontFamily: "var(--font-outfit)",
+              fontSize: 11,
+              fontWeight: 500,
+              color: "#E8651A",
+            }}
+          >
+            Apply →
+          </span>
+        </div>
       </Link>
     </motion.div>
   );
@@ -985,6 +1575,48 @@ function TableIcon() {
       <line x1="3" y1="15" x2="21" y2="15" />
       <line x1="9" y1="3" x2="9" y2="21" />
       <line x1="15" y1="3" x2="15" y2="21" />
+    </svg>
+  );
+}
+
+function ListIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="8" y1="6" x2="21" y2="6" />
+      <line x1="8" y1="12" x2="21" y2="12" />
+      <line x1="8" y1="18" x2="21" y2="18" />
+      <line x1="3" y1="6" x2="3.01" y2="6" />
+      <line x1="3" y1="12" x2="3.01" y2="12" />
+      <line x1="3" y1="18" x2="3.01" y2="18" />
+    </svg>
+  );
+}
+
+function GridIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="3" y="3" width="7" height="7" />
+      <rect x="14" y="3" width="7" height="7" />
+      <rect x="14" y="14" width="7" height="7" />
+      <rect x="3" y="14" width="7" height="7" />
     </svg>
   );
 }

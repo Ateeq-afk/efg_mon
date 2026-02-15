@@ -36,7 +36,7 @@ export default function NetworkFirst() {
       ref={sectionRef}
       style={{
         background: "var(--black)",
-        padding: "clamp(80px, 10vw, 120px) 0 clamp(80px, 10vw, 120px)",
+        padding: "clamp(60px, 8vw, 100px) 0 clamp(80px, 10vw, 120px)",
       }}
     >
       <div
@@ -47,100 +47,24 @@ export default function NetworkFirst() {
         }}
       >
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION HEADER — Centered Introduction
-            ═══════════════════════════════════════════════════════════════ */}
-        <div className="text-center" style={{ marginBottom: 48 }}>
-          {/* Label with lines */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="flex items-center justify-center gap-4"
-          >
-            <span
-              style={{
-                width: 40,
-                height: 1,
-                background: "rgba(232, 101, 26, 0.4)",
-              }}
-            />
-            <span
-              style={{
-                fontSize: 11,
-                fontWeight: 600,
-                letterSpacing: "2.5px",
-                textTransform: "uppercase",
-                color: "var(--orange)",
-                fontFamily: "var(--font-outfit)",
-              }}
-            >
-              NetworkFirst Boardrooms
-            </span>
-            <span
-              style={{
-                width: 40,
-                height: 1,
-                background: "rgba(232, 101, 26, 0.4)",
-              }}
-            />
-          </motion.div>
-
-          {/* Title */}
-          <motion.h2
-            initial={{ opacity: 0, y: 15 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 800,
-              fontSize: "clamp(32px, 4vw, 52px)",
-              letterSpacing: "-1.5px",
-              color: "var(--white)",
-              lineHeight: 1.1,
-              margin: "16px 0 0",
-            }}
-          >
-            A Different Kind of Room
-          </motion.h2>
-
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            style={{
-              fontFamily: "var(--font-outfit)",
-              fontWeight: 300,
-              fontSize: 16,
-              color: "#808080",
-              lineHeight: 1.6,
-              maxWidth: 560,
-              margin: "14px auto 0",
-            }}
-          >
-            Exclusive closed-door sessions for 15–20 hand-selected executives. No
-            keynotes. No slides. Just the conversations that move industries —
-            hosted year-round across the GCC under the NetworkFirst brand.
-          </motion.p>
-        </div>
-
-        {/* ═══════════════════════════════════════════════════════════════
-            THE VISUAL REVEAL — Image Block
+            THE CINEMATIC HERO — Full-width immersive image block
             ═══════════════════════════════════════════════════════════════ */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.98 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{
-            duration: 0.9,
-            delay: 0.3,
+            duration: 1,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="relative overflow-hidden cursor-pointer rounded-[24px]"
+          className="relative overflow-hidden rounded-[28px]"
+          style={{
+            border: "1px solid rgba(232, 101, 26, 0.1)",
+          }}
           onMouseEnter={() => setIsImageHovered(true)}
           onMouseLeave={() => setIsImageHovered(false)}
         >
-          {/* Aspect ratio container - responsive via Tailwind */}
-          <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[16/7]">
+          {/* Aspect ratio container */}
+          <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[2.4/1]">
             {/* The Image */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -149,92 +73,149 @@ export default function NetworkFirst() {
               className="absolute inset-0 w-full h-full object-cover transition-all"
               style={{
                 filter: isImageHovered
-                  ? "brightness(0.38) saturate(0.85)"
-                  : "brightness(0.3) saturate(0.85)",
-                transform: isImageHovered ? "scale(1.03)" : "scale(1)",
-                transitionDuration: "1s",
+                  ? "brightness(0.4) saturate(0.9)"
+                  : "brightness(0.28) saturate(0.85)",
+                transform: isImageHovered ? "scale(1.04)" : "scale(1)",
+                transitionDuration: "1.2s",
                 transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
               }}
             />
 
-            {/* Warm gradient overlay */}
+            {/* Warm gradient overlays */}
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                background:
-                  "linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.4) 40%, rgba(15,12,10,0.3) 100%)",
+                background: `
+                  linear-gradient(to right, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.3) 50%, transparent 100%),
+                  linear-gradient(to top, rgba(10,10,10,0.95) 0%, transparent 50%)
+                `,
               }}
             />
 
-            {/* Overlaid text content */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-12">
-              {/* Brand label */}
-              <motion.span
-                initial={{ opacity: 0, y: 15 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+            {/* Subtle orange accent glow */}
+            <div
+              className="absolute bottom-0 left-0 pointer-events-none transition-opacity duration-700"
+              style={{
+                width: 400,
+                height: 300,
+                background: "radial-gradient(ellipse at bottom left, rgba(232, 101, 26, 0.15) 0%, transparent 70%)",
+                opacity: isImageHovered ? 1 : 0.6,
+              }}
+            />
+
+            {/* Content — Left-aligned for editorial feel */}
+            <div className="absolute inset-0 flex flex-col justify-center p-8 sm:p-12 lg:p-16">
+              {/* Brand label with accent line */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                 transition={{
-                  duration: 0.6,
-                  delay: 0.6,
+                  duration: 0.7,
+                  delay: 0.2,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                style={{
-                  display: "block",
-                  fontFamily: "var(--font-outfit)",
-                  fontSize: 11,
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "4px",
-                  color: "#E8651A",
-                }}
+                className="flex items-center gap-3"
               >
-                NetworkFirst
-              </motion.span>
+                <span
+                  style={{
+                    width: 32,
+                    height: 2,
+                    background: "#E8651A",
+                  }}
+                />
+                <span
+                  style={{
+                    fontFamily: "var(--font-outfit)",
+                    fontSize: 11,
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                    letterSpacing: "3px",
+                    color: "#E8651A",
+                  }}
+                >
+                  NetworkFirst Boardrooms
+                </span>
+              </motion.div>
 
               {/* Headline */}
               <motion.h2
-                initial={{ opacity: 0, y: 15 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{
-                  duration: 0.6,
-                  delay: 0.75,
+                  duration: 0.8,
+                  delay: 0.35,
                   ease: [0.16, 1, 0.3, 1],
                 }}
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 800,
-                  fontSize: "clamp(28px, 4vw, 48px)",
-                  letterSpacing: "-1.5px",
+                  fontSize: "clamp(32px, 5vw, 56px)",
+                  letterSpacing: "-2px",
                   color: "white",
-                  lineHeight: 1.1,
-                  maxWidth: 700,
-                  margin: "12px 0 0",
+                  lineHeight: 1.05,
+                  maxWidth: 600,
+                  margin: "20px 0 0",
                 }}
               >
-                Where Decisions Are Made Behind Closed Doors
+                A Different Kind
+                <br />
+                of Room
               </motion.h2>
 
               {/* Description */}
               <motion.p
-                initial={{ opacity: 0, y: 15 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{
-                  duration: 0.6,
-                  delay: 0.9,
+                  duration: 0.8,
+                  delay: 0.5,
                   ease: [0.16, 1, 0.3, 1],
                 }}
                 style={{
                   fontFamily: "var(--font-outfit)",
                   fontWeight: 300,
-                  fontSize: "clamp(14px, 1.3vw, 17px)",
-                  color: "rgba(255,255,255,0.65)",
-                  lineHeight: 1.6,
-                  maxWidth: 520,
-                  margin: "14px 0 0",
+                  fontSize: "clamp(14px, 1.4vw, 17px)",
+                  color: "rgba(255,255,255,0.6)",
+                  lineHeight: 1.65,
+                  maxWidth: 420,
+                  margin: "18px 0 0",
                 }}
               >
-                Invitation-only boardroom sessions for 15–20 senior executives.
-                No keynotes. No panels. Just the conversations that shape strategy.
+                Invitation-only sessions for 15–20 hand-selected executives.
+                No keynotes. No slides. Just the conversations that move industries.
               </motion.p>
+
+              {/* CTA inline */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.65,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                style={{ marginTop: 28 }}
+              >
+                <Link
+                  href="/networkfirst"
+                  className="inline-flex items-center gap-2 group"
+                  style={{
+                    fontFamily: "var(--font-outfit)",
+                    fontSize: 13,
+                    fontWeight: 500,
+                    color: "#E8651A",
+                    letterSpacing: "0.5px",
+                  }}
+                >
+                  <span>Explore NetworkFirst</span>
+                  <span
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                    style={{ fontSize: 14 }}
+                  >
+                    →
+                  </span>
+                </Link>
+              </motion.div>
             </div>
           </div>
         </motion.div>
@@ -260,37 +241,46 @@ export default function NetworkFirst() {
         </div>
 
         {/* ═══════════════════════════════════════════════════════════════
-            CTA BAR
+            BOTTOM CONTEXT LINE
             ═══════════════════════════════════════════════════════════════ */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{
             duration: 0.6,
-            delay: 1.4,
+            delay: 1.2,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 mt-9"
+          className="flex items-center justify-center gap-4 mt-10"
         >
-          {/* Context text */}
+          <div
+            style={{
+              flex: 1,
+              maxWidth: 100,
+              height: 1,
+              background: "rgba(255,255,255,0.06)",
+            }}
+          />
           <p
             style={{
               fontFamily: "var(--font-outfit)",
-              fontSize: 14,
+              fontSize: 12,
               fontWeight: 400,
-              color: "#585858",
-              maxWidth: 480,
-              lineHeight: 1.6,
+              color: "#454545",
+              textAlign: "center",
               margin: 0,
             }}
           >
-            NetworkFirst is EFG's dedicated boardroom programme — an independent
-            series of intimate executive gatherings running year-round across the
-            GCC, each hosted by a single strategic partner.
+            Hosted year-round across the GCC by strategic partners
           </p>
-
-          {/* CTA Button */}
-          <CTAButton />
+          <div
+            style={{
+              flex: 1,
+              maxWidth: 100,
+              height: 1,
+              background: "rgba(255,255,255,0.06)",
+            }}
+          />
         </motion.div>
       </div>
     </section>
@@ -371,38 +361,3 @@ function FeatureCard({
   );
 }
 
-/**
- * CTAButton — Ghost outline button with hover effects
- */
-function CTAButton() {
-  const [isHovered, setIsHovered] = useState(false);
-
-  return (
-    <Link
-      href="/boardrooms"
-      className="inline-flex items-center gap-2 transition-all duration-300 flex-shrink-0"
-      style={{
-        padding: "13px 30px",
-        borderRadius: 50,
-        border: `1px solid ${isHovered ? "#E8651A" : "rgba(255,255,255,0.12)"}`,
-        background: isHovered ? "rgba(232,101,26,0.06)" : "transparent",
-        fontFamily: "var(--font-outfit)",
-        fontSize: 14,
-        fontWeight: 500,
-        color: "white",
-      }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <span>Explore NetworkFirst</span>
-      <span
-        className="transition-transform duration-300"
-        style={{
-          transform: isHovered ? "translateX(4px)" : "translateX(0)",
-        }}
-      >
-        →
-      </span>
-    </Link>
-  );
-}
