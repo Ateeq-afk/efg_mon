@@ -1,0 +1,32 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Footer from "@/components/sections/Footer";
+
+export default function CareersPage() {
+    return (
+        <div className="min-h-screen bg-[var(--black)]">
+            <div className="pt-32 pb-20 px-6 max-w-[1320px] mx-auto min-h-[60vh] flex flex-col justify-center items-center text-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                >
+                    <span className="text-[var(--orange)] font-[family-name:var(--font-outfit)] text-xs font-semibold tracking-[2.5px] uppercase mb-4 block">
+                        Join The Team
+                    </span>
+                    <h1 className="text-[var(--white)] font-[family-name:var(--font-display)] text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                        Careers at EFG
+                    </h1>
+                    <p className="text-[#A0A0A0] font-[family-name:var(--font-outfit)] text-lg font-light max-w-2xl mx-auto leading-relaxed mb-8">
+                        We&apos;re always looking for exceptional talent to help us shape the future of technology events in the GCC.
+                    </p>
+                    <div className="inline-block border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] px-8 py-4 rounded-full text-[#707070] font-[family-name:var(--font-outfit)]">
+                        No open positions at the moment. Check back soon.
+                    </div>
+                </motion.div>
+            </div>
+            <Footer />
+        </div>
+    );
+}
