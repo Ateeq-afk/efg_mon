@@ -11,7 +11,7 @@ const VIOLET = "#7C3AED";
 const VIOLET_BRIGHT = "#9F67FF";
 
 // Easing
-const EASE = [0.16, 1, 0.3, 1];
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 // Column widths
 const NARROW = 680;

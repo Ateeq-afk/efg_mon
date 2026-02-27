@@ -32,7 +32,16 @@ const TIER_LABELS: Record<SponsorTier, string> = {
   silver: "Silver Partners",
   bronze: "Bronze Partners",
   partner: "Partners",
+  lead: "Lead Partners",
+  associate: "Associate Partners",
+  strategic: "Strategic Partners",
+  consulting: "Consulting Partners",
+  knowledge: "Knowledge Partners",
+  community: "Community Partners",
   media: "Media Partners",
+  supporting: "Supporting Partners",
+  networking: "Networking Partners",
+  patronage: "Patronage Partners",
 };
 
 export async function SponsorsFromCMS({

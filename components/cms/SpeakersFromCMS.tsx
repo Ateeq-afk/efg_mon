@@ -38,7 +38,7 @@ export async function SpeakersFromCMS({
   showViewAll = true,
 }: SpeakersFromCMSProps) {
   const speakers = await getSpeakersBySeries(seriesSlug, {
-    featuredOnly: true,
+    featured: true,
     limit,
   });
 
