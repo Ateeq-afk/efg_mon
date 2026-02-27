@@ -4,56 +4,56 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
-// Gallery images data - EFG Events real photos from S3
-const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com/Good";
+// Gallery images data - EFG Events curated photos from S3
+const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com";
 
 const galleryImages = [
   {
     id: 1,
-    src: `${S3_BASE}/4N8A0010.JPG`, // Wide stage panel shot - hero
+    src: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%204.21%E2%80%AFAM.png`,
     alt: "Cyber First UAE panel discussion on MENA leadership strategies",
     gridClass: "col-span-2 row-span-2", // Hero image
   },
   {
     id: 2,
-    src: `${S3_BASE}/4N8A9900.JPG`, // Networking at exhibition booth
-    alt: "Networking at Bureau Veritas Cybersecurity booth",
+    src: `${S3_BASE}/events/OT%20Security%20First%20UAE%202025/OT%20First%20UAE%20Photos/4N8A0397.JPG`,
+    alt: "Networking at OT Security First exhibition",
     gridClass: "col-span-1 row-span-1",
   },
   {
     id: 3,
-    src: `${S3_BASE}/4N8A0122.JPG`, // Keynote speaker
+    src: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%202.41%E2%80%AFAM.png`,
     alt: "Keynote speaker at Cyber First conference",
     gridClass: "col-span-1 row-span-1",
   },
   {
     id: 4,
-    src: `${S3_BASE}/4N8A0025.JPG`, // Single speaker engaged
+    src: `${S3_BASE}/events/OT%20Security%20First%20UAE%202025/OT%20First%20UAE%20Photos/4N8A0400.JPG`,
     alt: "Executive speaker during panel session",
     gridClass: "col-span-1 row-span-2", // Tall portrait
   },
   {
     id: 5,
-    src: `${S3_BASE}/4N8A0200.JPG`, // Award ceremony
+    src: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%202.47%E2%80%AFAM.png`,
     alt: "Award presentation at Cyber Resilience summit",
     gridClass: "col-span-1 row-span-1",
   },
   {
     id: 6,
-    src: `${S3_BASE}/4N8A0001.JPG`, // Stage presentation
+    src: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%204.58%E2%80%AFAM.png`,
     alt: "Stage presentation with sponsor backdrop",
     gridClass: "col-span-2 row-span-1", // Wide landscape
   },
   {
     id: 7,
-    src: `${S3_BASE}/4N8A0015.JPG`, // Sara Al Hosani speaking
-    alt: "Director of Cyber Threat Intelligence speaking",
+    src: `${S3_BASE}/events/OT%20Security%20First%20UAE%202025/OT%20First%20UAE%20Photos/4N8A0408.JPG`,
+    alt: "Director speaking at industry conference",
     gridClass: "col-span-1 row-span-1",
     hideOnMobile: true,
   },
   {
     id: 8,
-    src: `${S3_BASE}/4N8A0070.JPG`, // Engaged audience
+    src: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%205.10%E2%80%AFAM.png`,
     alt: "Conference audience during keynote session",
     gridClass: "col-span-1 row-span-1",
     hideOnMobile: true,

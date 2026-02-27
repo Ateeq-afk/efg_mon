@@ -4,15 +4,15 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-// Hero images from S3 bucket
-const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com/Good";
+// Hero images from S3 bucket - curated homepage collection
+const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com";
 
 const heroImages = [
-  `${S3_BASE}/4N8A0005.JPG`,
-  `${S3_BASE}/4N8A0133.JPG`,
-  `${S3_BASE}/4N8A0050.JPG`,
-  `${S3_BASE}/4N8A0375.JPG`,
-  `${S3_BASE}/4N8A0035.JPG`,
+  `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%203.33%E2%80%AFAM.png`,
+  `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%204.18%E2%80%AFAM.png`,
+  `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%204.54%E2%80%AFAM.png`,
+  `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%205.05%E2%80%AFAM.png`,
+  `${S3_BASE}/home-event-spec/DSC08180.jpg`,
 ];
 
 // Next event data for the countdown

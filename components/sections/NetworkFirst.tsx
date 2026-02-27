@@ -68,7 +68,7 @@ export default function NetworkFirst() {
             {/* The Image */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://efg-final.s3.eu-north-1.amazonaws.com/Good/4N8A0050.JPG"
+              src="https://efg-final.s3.eu-north-1.amazonaws.com/home-event-spec/Image%2016-02-2026%20at%203.52%E2%80%AFAM.png"
               alt="Exclusive boardroom setting"
               className="absolute inset-0 w-full h-full object-cover transition-all"
               style={{

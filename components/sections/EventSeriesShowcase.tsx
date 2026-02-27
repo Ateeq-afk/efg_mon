@@ -4,8 +4,8 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
-// Event series data - Using real EFG event photos from S3
-const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com/Good";
+// Event series data - Using curated EFG event photos from S3
+const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com";
 
 const eventSeries = [
   {
@@ -16,7 +16,7 @@ const eventSeries = [
       "Where the region's CISOs, security architects, and cyber leaders gather to shape the future of enterprise defense.",
     stats: "5 Editions · Kuwait, Qatar, KSA, Oman",
     color: "#01BBF5",
-    image: `${S3_BASE}/4N8A0010.JPG`, // Real Cyber First panel photo
+    image: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%202.46%E2%80%AFAM.png`,
     href: "/events/cyber-first",
   },
   {
@@ -27,7 +27,7 @@ const eventSeries = [
       "Bridging IT and OT security for the industries that keep the world running — energy, manufacturing, utilities.",
     stats: "3 Editions · Saudi Arabia, Oman",
     color: "#D34B9A",
-    image: `${S3_BASE}/4N8A0122.JPG`, // Keynote speaker photo
+    image: `${S3_BASE}/events/OT%20Security%20First%20UAE%202025/OT%20First%20UAE%20Photos/4N8A0394.JPG`,
     href: "/events/ot-security-first",
   },
   {
@@ -38,7 +38,7 @@ const eventSeries = [
       "Process transformation, automation, and the frameworks driving efficiency at scale across the modern enterprise.",
     stats: "3 Editions · Dubai, Doha, Riyadh",
     color: "#11A385",
-    image: `${S3_BASE}/4N8A0050.JPG`, // Panel discussion photo
+    image: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%202.57%E2%80%AFAM.png`,
     href: "/events/opex-first",
   },
   {
@@ -49,7 +49,7 @@ const eventSeries = [
       "Data strategy, artificial intelligence, and machine learning — for the leaders building the intelligent, autonomous enterprise.",
     stats: "2 Editions · Kuwait, Qatar",
     color: "#7C3AED",
-    image: `${S3_BASE}/4N8A0001.JPG`, // Stage presentation photo
+    image: `${S3_BASE}/home-event-spec/Image%2016-02-2026%20at%203.45%E2%80%AFAM.png`,
     href: "/events/data-ai-first",
   },
 ];
