@@ -8,7 +8,7 @@ export type Json =
   | { [key: string]: Json | undefined }
   | Json[];
 
-export type SeriesSlug = "cyber-first" | "ot-security-first" | "data-ai-first" | "opex-first";
+export type SeriesSlug = "cyber-first" | "ot-security-first" | "data-ai-first" | "opex-first" | "cxo-first";
 export type SpeakerRole = "speaker" | "advisor" | "panelist" | "workshop_lead" | "keynote" | "moderator" | "chair";
 export type SponsorTier = "platinum" | "gold" | "lead" | "associate" | "strategic" | "consulting" | "knowledge" | "community" | "media" | "supporting" | "networking" | "patronage";
 export type Status = "active" | "inactive" | "pending";
