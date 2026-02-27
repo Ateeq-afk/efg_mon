@@ -4,7 +4,9 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
-// Event series data
+// Event series data - Using real EFG event photos from S3
+const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com/Good";
+
 const eventSeries = [
   {
     id: "cyber-first",
@@ -14,8 +16,7 @@ const eventSeries = [
       "Where the region's CISOs, security architects, and cyber leaders gather to shape the future of enterprise defense.",
     stats: "5 Editions · Kuwait, Qatar, KSA, Oman",
     color: "#01BBF5",
-    image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
+    image: `${S3_BASE}/4N8A0010.JPG`, // Real Cyber First panel photo
     href: "/events/cyber-first",
   },
   {
@@ -26,8 +27,7 @@ const eventSeries = [
       "Bridging IT and OT security for the industries that keep the world running — energy, manufacturing, utilities.",
     stats: "3 Editions · Saudi Arabia, Oman",
     color: "#D34B9A",
-    image:
-      "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
+    image: `${S3_BASE}/4N8A0122.JPG`, // Keynote speaker photo
     href: "/events/ot-security-first",
   },
   {
@@ -38,8 +38,7 @@ const eventSeries = [
       "Process transformation, automation, and the frameworks driving efficiency at scale across the modern enterprise.",
     stats: "3 Editions · Dubai, Doha, Riyadh",
     color: "#11A385",
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
+    image: `${S3_BASE}/4N8A0050.JPG`, // Panel discussion photo
     href: "/events/opex-first",
   },
   {
@@ -50,8 +49,7 @@ const eventSeries = [
       "Data strategy, artificial intelligence, and machine learning — for the leaders building the intelligent, autonomous enterprise.",
     stats: "2 Editions · Kuwait, Qatar",
     color: "#7C3AED",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    image: `${S3_BASE}/4N8A0001.JPG`, // Stage presentation photo
     href: "/events/data-ai-first",
   },
 ];

@@ -4,55 +4,57 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
-// Gallery images data
+// Gallery images data - EFG Events real photos from S3
+const S3_BASE = "https://efg-final.s3.eu-north-1.amazonaws.com/Good";
+
 const galleryImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80",
-    alt: "Conference keynote stage",
+    src: `${S3_BASE}/4N8A0010.JPG`, // Wide stage panel shot - hero
+    alt: "Cyber First UAE panel discussion on MENA leadership strategies",
     gridClass: "col-span-2 row-span-2", // Hero image
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&q=80",
-    alt: "Networking conversation",
+    src: `${S3_BASE}/4N8A9900.JPG`, // Networking at exhibition booth
+    alt: "Networking at Bureau Veritas Cybersecurity booth",
     gridClass: "col-span-1 row-span-1",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80",
-    alt: "Speaker presenting",
+    src: `${S3_BASE}/4N8A0122.JPG`, // Keynote speaker
+    alt: "Keynote speaker at Cyber First conference",
     gridClass: "col-span-1 row-span-1",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80",
-    alt: "Professional attendee",
+    src: `${S3_BASE}/4N8A0025.JPG`, // Single speaker engaged
+    alt: "Executive speaker during panel session",
     gridClass: "col-span-1 row-span-2", // Tall portrait
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1591115765373-5f9cf1da241c?w=600&q=80",
-    alt: "Exhibition area",
+    src: `${S3_BASE}/4N8A0200.JPG`, // Award ceremony
+    alt: "Award presentation at Cyber Resilience summit",
     gridClass: "col-span-1 row-span-1",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80",
-    alt: "Venue panoramic",
+    src: `${S3_BASE}/4N8A0001.JPG`, // Stage presentation
+    alt: "Stage presentation with sponsor backdrop",
     gridClass: "col-span-2 row-span-1", // Wide landscape
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=600&q=80",
-    alt: "Boardroom setting",
+    src: `${S3_BASE}/4N8A0015.JPG`, // Sara Al Hosani speaking
+    alt: "Director of Cyber Threat Intelligence speaking",
     gridClass: "col-span-1 row-span-1",
     hideOnMobile: true,
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80",
-    alt: "Production setup",
+    src: `${S3_BASE}/4N8A0070.JPG`, // Engaged audience
+    alt: "Conference audience during keynote session",
     gridClass: "col-span-1 row-span-1",
     hideOnMobile: true,
   },
