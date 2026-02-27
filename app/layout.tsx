@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScrollProvider from "@/components/effects/SmoothScrollProvider";
 import CursorGlow from "@/components/effects/CursorGlow";
 import ConditionalNavigation from "@/components/ui/ConditionalNavigation";
+import ImageProtection from "@/components/effects/ImageProtection";
 
 // Plus Jakarta Sans — The voice that commands the room
 // Geometric, clean, commanding — pure precision at display sizes
@@ -58,6 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakarta.variable} ${outfit.variable} ${dmSans.variable}`}>
       <body className="antialiased">
+        <ImageProtection />
         <SmoothScrollProvider>
           <CursorGlow />
           <ConditionalNavigation />
